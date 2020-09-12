@@ -1,0 +1,45 @@
+/* ХЭДЭР */
+
+.site-logo {
+  fill: #000;
+  transition: fill 250ms linear;
+}
+
+.logo:hover .site-logo {
+  fill: white;
+}
+
+.header {
+  background-color: #c8a35f;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.container .nav-list {
+  display: flex;
+}
+
+.nav-list .nav-list-item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.nav-list .nav-list-link:hover,
+.nav-list .nav-list-link:focus {
+  color: $main-accent-color;
+}
+
+.nav-list-link {
+  padding-top: 38px;
+  padding-bottom: 38px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $main-text-color;
+  transition: color 250ms linear;
+}

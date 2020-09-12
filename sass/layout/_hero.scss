@@ -1,0 +1,50 @@
+/* СЕКЦИЯ ГЕРОЙ */
+
+.hero-sec {
+  border: 1px solid #c8a35f;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.5), 0px 4px 4px rgba(0, 0, 0, 0.5),
+    0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background: linear-gradient(
+      0deg,
+      rgba(47, 52, 58, 0.75),
+      rgba(47, 52, 58, 0.75)
+    ),
+    url(../images/backgroundimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  padding-top: 25px;
+  padding-left: 71px;
+  padding-right: 71px;
+  margin-top: 0px;
+  margin-bottom: 45px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.hero-text {
+  padding-right: 71px;
+  padding-left: 71px;
+  padding-bottom: 45px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $main-text-color;
+}

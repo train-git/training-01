@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+li {
+  box-sizing: border-box;
+}
+
+body {
+  color: $main-text-color;
+  font-family: $main-font;
+  background-color: $main-background-color;
+  font-size: 16px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+}
+
+.list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}

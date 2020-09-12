@@ -1,0 +1,71 @@
+/* СЕКЦИЯ ФУТЕР */
+
+.footer {
+  background-color: #c8a35f;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.foot-list-link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $main-accent-color;
+  transition: color 250ms linear;
+
+  &:hover,
+  &focus {
+    color: $main-text-color;
+  }
+}
+
+.cont-list-link {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $main-accent-color;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: $main-text-color;
+  }
+}
+
+.foot-list-title,
+.schedule-title,
+.cont-list-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $main-accent-color;
+}
+
+.schedule-item {
+  margin: 0px;
+  padding-top: 18px;
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: $main-accent-color;
+}
