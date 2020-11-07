@@ -395,6 +395,7 @@ body {
 
 /* ХЭДЭР */
 .site-logo {
+  fill: #000;
   transition: fill 250ms linear;
 }
 
@@ -409,15 +410,7 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.container .nav-list {
-  display: flex;
-}
-
-.nav-list .nav-list-item:not(:last-child) {
-  margin-right: 100px;
+  justify-content: space-around;
 }
 
 .nav-list .nav-list-link:hover,
@@ -426,15 +419,36 @@ body {
 }
 
 .nav-list-link {
-  padding-top: 38px;
-  padding-bottom: 38px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
   transition: color 250ms linear;
+}
+
+@media screen and (min-width: 780px) {
+  .nav-list .nav-list-item:not(:last-child) {
+    margin-right: 100px;
+  }
+  .container .nav-list {
+    display: flex;
+  }
+  .nav-list-link {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list-link {
+    font-size: 18px;
+  }
 }
 
 /* СЕКЦИЯ ГЕРОЙ */
