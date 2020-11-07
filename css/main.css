@@ -369,29 +369,32 @@ body {
   list-style: none;
 }
 
-@media screen and (max-width: 1199px) {
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+@media (max-width: 1200px) {
   .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 970px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (max-width: 992px) {
   .container {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
   }
 }
 
 /* ХЭДЭР */
 .site-logo {
-  fill: #000;
   transition: fill 250ms linear;
 }
 
@@ -451,8 +454,6 @@ body {
 
 .hero-title {
   padding-top: 25px;
-  padding-left: 71px;
-  padding-right: 71px;
   margin-top: 0px;
   margin-bottom: 45px;
   font-weight: 700;
@@ -465,8 +466,6 @@ body {
 }
 
 .hero-text {
-  padding-right: 71px;
-  padding-left: 71px;
   padding-bottom: 45px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -505,6 +504,7 @@ body {
   font-size: 22px;
   line-height: 23px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -525,10 +525,10 @@ body {
 }
 
 .prod-img {
+  width: 100%;
   display: block;
   margin-bottom: 20px;
   padding-top: 10px;
-  padding-left: 10px;
   overflow: hidden;
 }
 
@@ -536,8 +536,6 @@ body {
   width: calc((100% - 80px) / 3);
   margin-right: 40px;
   margin-bottom: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   border: 1px solid #c8a35f;
   transition: box-shadow 250ms linear;
 }
@@ -622,7 +620,6 @@ body {
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: #000000;
   transition: color 250ms linear;
 }
