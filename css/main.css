@@ -458,8 +458,8 @@ body {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background: linear-gradient(0deg, rgba(47, 52, 58, 0.75), rgba(47, 52, 58, 0.75)), url(../images/backgroundimg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -471,8 +471,8 @@ body {
   margin-top: 0px;
   margin-bottom: 45px;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 30px;
+  line-height: 45px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -483,18 +483,42 @@ body {
   padding-bottom: 45px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
 
+@media screen and (min-width: 780px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero-title {
+    font-size: 54px;
+    line-height: 55px;
+  }
+  .hero-text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 64px;
+    line-height: 75px;
+  }
+  .hero-text {
+    font-size: 24px;
+  }
+}
+
 /* СЕКЦИЯ ПРОДУКЦИЯ*/
 .production {
-  padding-top: 110px;
-  padding-bottom: 100px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .prod-title {
@@ -533,11 +557,6 @@ body {
   color: #ffffff;
 }
 
-.prod-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .prod-img {
   width: 100%;
   display: block;
@@ -547,31 +566,65 @@ body {
 }
 
 .prod-list-item {
-  width: calc((100% - 80px) / 3);
-  margin-right: 40px;
-  margin-bottom: 30px;
   border: 1px solid #c8a35f;
   transition: box-shadow 250ms linear;
 }
 
-.prod-list-item:nth-child(3n) {
-  margin-right: 0px;
-}
-
-.prod-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+.prod-list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .prod-list-item:hover {
   box-shadow: 7px 6px 5px rgba(0, 0, 0, 0.5), 7px 6px 5px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (min-width: 780px) {
+  .production {
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+  .prod-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .prod-list-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 30px) / 2);
+  }
+  .prod-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .prod-list-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .production {
+    padding-top: 110px;
+    padding-bottom: 110px;
+  }
+  .prod-list-item {
+    width: calc((100% - 60px) / 3);
+  }
+  .prod-list-item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .prod-list-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
 /* СЕКЦИЯ О НАС */
 .about-title {
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 49px;
   letter-spacing: 0.05em;
   border-top: 1px solid #c8a35f;
@@ -581,12 +634,34 @@ body {
 
 .about-text {
   margin-top: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 29px;
   letter-spacing: 0.05em;
   color: #ffffff;
+}
+
+@media screen and (min-width: 780px) {
+  .about-title {
+    margin-bottom: 35px;
+    font-size: 35px;
+  }
+  .about-text {
+    padding-bottom: 50px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-title {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  .about-text {
+    padding-bottom: 60px;
+    font-size: 20px;
+  }
 }
 
 /* СЕКЦИЯ НАВИГАЦИИ */

@@ -2,9 +2,9 @@
 
 .about-title {
   margin-top: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 49px;
   letter-spacing: 0.05em;
   border-top: 1px solid #c8a35f;
@@ -14,10 +14,34 @@
 
 .about-text {
   margin-top: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 29px;
   letter-spacing: 0.05em;
   color: $main-text-color;
+}
+
+@media screen and (min-width: 780px) {
+  .about-title {
+    margin-bottom: 35px;
+    font-size: 35px;
+  }
+
+  .about-text {
+    padding-bottom: 50px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-title {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+
+  .about-text {
+    padding-bottom: 60px;
+    font-size: 20px;
+  }
 }
