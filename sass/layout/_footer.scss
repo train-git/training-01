@@ -2,24 +2,18 @@
 
 .footer {
   background-color: #c8a35f;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 .foot-list-link {
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 23px;
+  line-height: 23px;
   letter-spacing: 0.05em;
-  // text-transform: uppercase;
   color: $main-accent-color;
   transition: color 250ms linear;
 
@@ -33,8 +27,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 23px;
+  line-height: 23px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $main-accent-color;
@@ -52,7 +46,7 @@
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 55px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -64,8 +58,24 @@
   padding-top: 18px;
   padding-bottom: 10px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 16px;
   letter-spacing: 0.05em;
   color: $main-accent-color;
+}
+
+@media screen and (min-width: 780px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
 }

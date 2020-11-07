@@ -405,12 +405,7 @@ body {
 
 .header {
   background-color: #c8a35f;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  text-align: center;
 }
 
 .nav-list .nav-list-link:hover,
@@ -420,9 +415,9 @@ body {
 
 .nav-list-link {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -431,6 +426,11 @@ body {
 }
 
 @media screen and (min-width: 780px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   .nav-list .nav-list-item:not(:last-child) {
     margin-right: 100px;
   }
@@ -692,22 +692,17 @@ body {
 /* СЕКЦИЯ ФУТЕР */
 .footer {
   background-color: #c8a35f;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 .foot-list-link {
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 23px;
+  line-height: 23px;
   letter-spacing: 0.05em;
   color: #000000;
   transition: color 250ms linear;
@@ -721,8 +716,8 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 16px;
+  font-size: 23px;
+  line-height: 23px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000;
@@ -739,7 +734,7 @@ body {
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 55px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -751,9 +746,21 @@ body {
   padding-top: 18px;
   padding-bottom: 10px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 23px;
   line-height: 16px;
   letter-spacing: 0.05em;
   color: #000000;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 /*# sourceMappingURL=main.css.map */

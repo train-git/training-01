@@ -11,12 +11,7 @@
 
 .header {
   background-color: #c8a35f;
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
+  text-align: center;
 }
 
 .nav-list .nav-list-link:hover,
@@ -26,9 +21,9 @@
 
 .nav-list-link {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -37,6 +32,12 @@
 }
 
 @media screen and (min-width: 780px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   .nav-list .nav-list-item:not(:last-child) {
     margin-right: 100px;
   }
